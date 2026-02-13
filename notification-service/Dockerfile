@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8001
-# Module call 'python -m uvicorn' bypasses PATH executable issues
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]
+EXPOSE 8003
+# Use python directly for the Flask app
+CMD ["python", "main.py"]

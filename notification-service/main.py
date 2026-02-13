@@ -13,7 +13,7 @@ processor = BatchSpanProcessor(OTLPSpanExporter(endpoint=os.getenv("OTLP_EXPORTE
 # Fixed method name from addSpanProcessor to add_span_processor
 provider.add_span_processor(processor)
 trace.set_tracer_provider(provider)
-
+     
 app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 

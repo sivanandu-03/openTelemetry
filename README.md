@@ -109,7 +109,7 @@ chmod +x analyze-traces.sh
 4. Expand the **`order-service`** span to see custom tags like `user.id: 101`.
 
 ---
-
+      
 ## 📝 Mandatory Compliance Checklist
 
 * **[✅] Polyglot Integration**: Successful communication between Node.js and Python.
